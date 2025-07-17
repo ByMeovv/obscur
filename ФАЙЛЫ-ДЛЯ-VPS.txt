@@ -1,0 +1,72 @@
+📋 ПОЛНЫЙ СПИСОК ФАЙЛОВ ДЛЯ КОПИРОВАНИЯ НА VPS
+
+=== ОБЯЗАТЕЛЬНЫЕ ФАЙЛЫ ===
+
+🐳 Docker конфигурация:
+- Dockerfile.backend
+- client/Dockerfile.frontend
+- compose.yaml
+
+🚀 Скрипты запуска:
+- vps-install.sh (установка Docker на VPS)
+- run-one-command.sh (запуск одной командой) ⭐ РЕКОМЕНДУЕТСЯ
+- deploy-production.sh (основной скрипт развертывания)
+- fix-styling-production.sh (исправление стилей)
+- docker-compose-start.sh (альтернативный запуск)
+
+📖 Документация:
+- README-VPS.md (подробная инструкция)
+- ЗАПУСК-НА-VPS.md (краткая инструкция)
+- ФАЙЛЫ-ДЛЯ-VPS.txt (этот файл)
+
+📦 Конфигурация проекта:
+- package.json
+- package-lock.json
+- tsconfig.json
+- tailwind.config.ts
+- components.json
+- drizzle.config.ts
+
+📁 Исходный код:
+- server/ (папка с бэкендом)
+- client/ (папка с фронтендом)
+- shared/ (папка с общими типами)
+- src/ (дополнительная папка с компонентами)
+
+=== ИНСТРУКЦИЯ ПО ЗАПУСКУ ===
+
+1. Скопируйте ВСЕ файлы и папки на ваш VPS
+2. Выполните: sudo ./vps-install.sh
+3. Выполните: ./run-one-command.sh
+4. Готово! Сайт работает на http://ваш-ip
+
+=== СТРУКТУРА ПАПОК НА VPS ===
+
+obscur-clothes/
+├── server/           # Бэкенд код
+├── client/           # Фронтенд код
+├── shared/           # Общие типы
+├── src/              # UI компоненты
+├── Dockerfile.backend
+├── client/Dockerfile.frontend
+├── compose.yaml
+├── run-one-command.sh ⭐
+├── deploy-production.sh
+├── fix-styling-production.sh
+├── vps-install.sh
+├── docker-compose-start.sh
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+├── README-VPS.md
+├── ЗАПУСК-НА-VPS.md
+└── ФАЙЛЫ-ДЛЯ-VPS.txt
+
+=== САМЫЙ ПРОСТОЙ СПОСОБ ===
+
+На VPS выполните ТОЛЬКО эти 2 команды:
+
+sudo ./vps-install.sh
+./run-one-command.sh
+
+Всё! Ваш сайт будет работать "как швейцарские часы" 🕰️
