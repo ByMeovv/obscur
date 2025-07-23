@@ -1,0 +1,379 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS-переменные темы */
+:root {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 17.6%);
+  --muted-foreground: hsl(0, 0%, 63.9%);
+  --popover: hsl(0, 0%, 10.2%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 10.2%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 17.6%);
+  --input: hsl(0, 0%, 17.6%);
+  --primary: hsl(262, 83%, 70%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 17.6%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(0, 0%, 17.6%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --ring: hsl(262, 83%, 70%);
+  --radius: 0.5rem;
+  --obscur-purple: hsl(262, 83%, 70%);
+  --obscur-lilac: hsl(270, 64%, 68%);
+  --obscur-deep: hsl(262, 83%, 58%);
+  --obscur-dark: hsl(0, 0%, 10.2%);
+  --obscur-gray: hsl(0, 0%, 17.6%);
+}
+
+/* Базовые стили */
+@layer base {
+  /* Глобальные стили */
+  * {
+    @apply border-gray-800;
+  }
+
+  /* Тело страницы */
+  body {
+    @apply bg-black text-white font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Моноширинный шрифт */
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Единые стили для заголовков H1 во всех контекстах */
+  :where(h1) {
+    font-size: 2em;
+    margin-block: 0.67em;
+  }
+}
+
+/* Кастомные компоненты */
+@layer components {
+  /* Minimalist gradient background */
+  .fire-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, 
+      #000000 0%, 
+      #1a1a1a 50%, 
+      #2a1a3a 100%);
+    z-index: -1;
+  }
+
+  /* Эффекты свечения */
+  .glow-effect {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, 
+      #9333ea 0%,    /* Purple */
+      #a855f7 50%,   /* Light purple */
+      #c084fc 100%   /* Lighter purple */
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  /* Minimalist animations */
+  .subtle-glow {
+    transition: all 0.3s ease;
+  }
+
+  .subtle-glow:hover {
+    box-shadow: 0 4px 20px rgba(147, 51, 234, 0.15);
+  }
+
+  .gentle-float {
+    animation: gentle-float 4s ease-in-out infinite;
+  }
+
+  .fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+
+  .minimalist-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(147, 51, 234, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+
+  .minimalist-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(147, 51, 234, 0.2);
+    box-shadow: 0 8px 32px rgba(147, 51, 234, 0.1);
+  }
+
+  /* Minimalist button styling */
+  .primary-button {
+    background: linear-gradient(135deg, #9333ea, #7c3aed);
+    border: 1px solid rgba(147, 51, 234, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .primary-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(147, 51, 234, 0.25);
+    border-color: rgba(147, 51, 234, 0.5);
+  }
+
+  .primary-button:active {
+    transform: translateY(0);
+  }
+
+  .secondary-button {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(156, 163, 175, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+
+  .secondary-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(156, 163, 175, 0.5);
+    transform: translateY(-1px);
+  }
+
+  /* Interactive elements */
+  .interactive-text {
+    transition: all 0.3s ease;
+    cursor: default;
+  }
+
+  .interactive-text:hover {
+    transform: translateY(-1px);
+    text-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);
+  }
+
+  .interactive-icon {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .interactive-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 4px 8px rgba(147, 51, 234, 0.4));
+  }
+
+  .interactive-link {
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .interactive-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #9333ea, #c084fc);
+    transition: width 0.3s ease;
+  }
+
+  .interactive-link:hover::after {
+    width: 100%;
+  }
+
+  .interactive-link:hover {
+    color: #c084fc;
+    transform: translateX(2px);
+  }
+
+  .pulse-on-hover {
+    transition: all 0.3s ease;
+  }
+
+  .pulse-on-hover:hover {
+    animation: gentle-pulse 1s ease-in-out infinite;
+  }
+
+  .tilt-on-hover {
+    transition: all 0.3s ease;
+  }
+
+  .tilt-on-hover:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 10px 30px rgba(147, 51, 234, 0.2);
+  }
+
+  /* Минималистичная карточка с тонким свечением */
+  .glow-chase {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(147, 51, 234, 0.1);
+  }
+
+  .glow-chase::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(147, 51, 234, 0.02) 0%,
+      rgba(168, 85, 247, 0.03) 30%,
+      rgba(192, 132, 252, 0.02) 70%,
+      rgba(147, 51, 234, 0.01) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  .glow-chase:hover {
+    border-color: rgba(147, 51, 234, 0.3);
+    box-shadow: 
+      0 4px 20px rgba(147, 51, 234, 0.08),
+      0 1px 3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .glow-chase:hover::before {
+    opacity: 1;
+  }
+
+  /* Плавная анимация скролла для страницы */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Убрали лишние анимации для минимализма */
+}
+
+/* Minimalist Animations */
+@keyframes gentle-float {
+  0%, 100% { 
+    transform: translateY(0px);
+  }
+  50% { 
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px rgba(147, 51, 234, 0.3); }
+  to { box-shadow: 0 0 20px rgba(147, 51, 234, 0.5); }
+}
+
+@keyframes gentle-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+@keyframes text-glow {
+  0%, 100% { text-shadow: 0 0 10px rgba(147, 51, 234, 0.3); }
+  50% { text-shadow: 0 0 20px rgba(147, 51, 234, 0.6); }
+}
+
+  /* Плавная анимация для карусели */
+  .carousel-smooth {
+    scroll-behavior: smooth;
+  }
+
+  .carousel-item {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+  }
+
+  .carousel-item:hover {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+
+  /* Тонкие анимации для текста */
+  .text-subtle-glow {
+    transition: all 0.3s ease;
+  }
+
+  .text-subtle-glow:hover {
+    text-shadow: 0 2px 8px rgba(147, 51, 234, 0.15);
+    color: rgba(192, 132, 252, 0.9);
+  }
+
+  /* Убрали сложные анимации для читабельности */
+
+  /* Минималистичные анимации появления */
+  @keyframes subtle-fade-in {
+    from { 
+      opacity: 0; 
+      transform: translateY(10px);
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes gentle-scale {
+    from { transform: scale(0.98); }
+    to { transform: scale(1); }
+  }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .fire-bg {
+    animation-duration: 6s;
+  }
+  
+  .gradient-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Утилиты */
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 0 20px rgba(147, 51, 234, 0.5);
+  }
+
+  .backdrop-blur-strong {
+    backdrop-filter: blur(10px);
+  }
+}

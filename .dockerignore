@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+.env
+.nyc_output
+coverage
+.cache
+.vscode
+.DS_Store
+dist
+client/dist
+client/node_modules
+*.log
+package-lock.json
+client/package-lock.json

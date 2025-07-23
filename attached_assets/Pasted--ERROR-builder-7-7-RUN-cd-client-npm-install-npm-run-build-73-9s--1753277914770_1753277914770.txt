@@ -1,0 +1,286 @@
+=> ERROR [builder 7/7] RUN cd client && npm install && npm run build   73.9s 
+------                                                                        
+ > [builder 7/7] RUN cd client && npm install && npm run build:               
+38.27 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.                                                                
+38.43 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported                                                                     
+39.42 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+39.45 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+39.80 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+44.97 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+57.65 
+57.65 added 439 packages, and audited 440 packages in 57s
+57.65 
+57.65 79 packages are looking for funding
+57.65   run `npm fund` for details
+57.67 
+57.67 2 moderate severity vulnerabilities
+57.67 
+57.67 To address all issues (including breaking changes), run:
+57.67   npm audit fix --force
+57.67 
+57.67 Run `npm audit` for details.
+58.16 
+58.16 > obscur-clothes-client@1.0.0 build
+58.16 > tsc && vite build
+58.16 
+72.82 src/App.tsx(11,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/App.tsx(12,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/App.tsx(13,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/App.tsx(20,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/App.tsx(21,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/App.tsx(22,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/App.tsx(23,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/components/ui/fire-background.tsx(2,11): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/components/ui/gothic-card.tsx(18,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/components/ui/gothic-card.tsx(33,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/components/ui/gothic-card.tsx(41,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/components/ui/gothic-card.tsx(46,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/components/ui/gothic-review-card.tsx(11,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.83 src/components/ui/gothic-review-card.tsx(12,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(14,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(15,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(16,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(19,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(20,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(21,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(23,20): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(35,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(40,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(41,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(42,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(43,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(45,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(46,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(47,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(52,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(57,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(58,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(64,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-review-card.tsx(65,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/gothic-stats-card.tsx(2,22): error TS6133: 'Users' is declared but its value is never read.
+72.84 src/components/ui/gothic-stats-card.tsx(2,29): error TS6133: 'Star' is declared but its value is never read.
+72.84 src/components/ui/gothic-stats-card.tsx(2,35): error TS6133: 'ShoppingBag' is declared but its value is never read.
+72.84 src/components/ui/horizontal-carousel.tsx(71,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/horizontal-carousel.tsx(74,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/horizontal-carousel.tsx(86,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/horizontal-carousel.tsx(91,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/horizontal-carousel.tsx(98,11): error TS2353: Object literal may only specify known properties, and 'WebkitScrollbar' does not exist in type 'Properties<string | number, string & {}>'.
+72.84 src/components/ui/horizontal-carousel.tsx(101,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/horizontal-carousel.tsx(108,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/horizontal-carousel.tsx(120,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/horizontal-carousel.tsx(125,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/horizontal-carousel.tsx(126,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(10,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(11,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(12,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(13,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(14,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(16,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(22,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(23,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(24,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(25,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(29,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/listing-card.tsx(35,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/resizable.tsx(12,4): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/resizable.tsx(30,4): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/resizable.tsx(38,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/resizable.tsx(39,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(10,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(11,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(12,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(13,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(14,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(16,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(17,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(18,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(21,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(23,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(27,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(28,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(29,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(32,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/review-card.tsx(38,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/skeleton.tsx(8,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/stats-card.tsx(23,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/stats-card.tsx(24,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/stats-card.tsx(25,36): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/stats-card.tsx(26,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/stats-card.tsx(28,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/stats-card.tsx(29,19): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/stats-card.tsx(30,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/stats-card.tsx(31,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/toaster.tsx(15,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/toaster.tsx(18,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/toaster.tsx(19,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/toaster.tsx(20,26): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/toaster.tsx(22,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/toaster.tsx(26,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/components/ui/toaster.tsx(30,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/main.tsx(5,54): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(11,10): error TS6133: 'scrollPosition' is declared but its value is never read.
+72.84 src/pages/home.tsx(30,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(31,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(34,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(35,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(36,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(37,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(38,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(40,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(41,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(42,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(45,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(46,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(53,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(60,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(68,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(69,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(70,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(77,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(78,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(79,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(80,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(86,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(87,25): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(88,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(90,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(91,60): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(94,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(95,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(102,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(108,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(116,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(117,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(118,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(119,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(126,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(132,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(138,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(140,22): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(150,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(151,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(152,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(153,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(154,27): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(156,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(159,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(160,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(161,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(165,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(167,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(174,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(175,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(176,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(177,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(178,23): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(180,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(183,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(184,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(185,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.84 src/pages/home.tsx(189,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(191,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(198,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(199,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(200,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(201,26): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(203,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(207,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(208,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(209,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(210,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(212,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(213,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(214,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(224,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(225,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(226,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(228,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(229,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(230,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(241,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(242,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(243,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(244,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(245,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(246,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(248,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(249,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(250,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(252,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(253,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(254,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(262,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(263,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(264,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(265,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(266,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(267,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(268,20): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(270,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(271,20): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(272,20): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(275,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(278,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(279,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(285,20): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(287,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(293,20): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(298,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(299,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(300,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(301,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(302,20): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(310,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(311,20): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(319,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(320,20): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(331,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(332,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(333,16): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(334,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(334,22): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(335,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(335,22): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(336,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(336,22): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(337,18): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(337,22): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(342,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(343,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/home.tsx(344,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/not-found.tsx(6,6): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/not-found.tsx(7,8): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/not-found.tsx(8,10): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/not-found.tsx(9,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/not-found.tsx(10,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/not-found.tsx(11,14): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+72.85 src/pages/not-found.tsx(14,12): error TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+------
+Dockerfile:18
+
+--------------------
+
+  16 |     
+
+  17 |     # Install client dependencies and build
+
+  18 | >>> RUN cd client && npm install && npm run build
+
+  19 |     
+
+  20 |     # Production stage
+
+--------------------
+
+failed to solve: process "/bin/sh -c cd client && npm install && npm run build" did not complete successfully: exit code: 2
+
+⏳ Ожидание готовности приложения...
+✅ Проверка статуса контейнеров...
+NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+📋 Последние логи приложения:
+no such service: backend
+🔍 Проверка работоспособности...
+⚠️  Приложение запускается... Проверьте логи:
+docker-compose logs backend
+📊 Для просмотра логов: docker-compose logs -f
+🛑 Для остановки: docker-compose down

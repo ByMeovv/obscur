@@ -1,0 +1,279 @@
+root@7d007ee617c2:~/obscur# docker compose up --build -d 
+WARN[0000] /root/obscur/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[+] Running 9/9
+ ✔ nginx Pulled                                                          3.1s 
+   ✔ 9824c27679d3 Already exists                                         0.0s 
+   ✔ a5585638209e Already exists                                         0.0s 
+   ✔ fd372c3c84a2 Already exists                                         0.0s 
+   ✔ 958a74d6a238 Already exists                                         0.0s 
+   ✔ c1d2dc189e38 Already exists                                         0.0s 
+   ✔ 828fa206d77b Already exists                                         0.0s 
+   ✔ bdaad27fd04a Already exists                                         0.0s 
+   ✔ f23865b38cc6 Already exists                                         0.0s 
+[+] Building 66.9s (12/20)                                                    
+ => [internal] load local bake definitions                               0.0s
+ => => reading from stdin 350B                                           0.0s
+ => [internal] load build definition from Dockerfile                     0.0s
+ => => transferring dockerfile: 1.23kB                                   0.0s
+ => [internal] load metadata for docker.io/library/node:18-alpine        1.9s
+ => [internal] load .dockerignore                                        0.0s
+ => => transferring context: 287B                                        0.0s
+ => [internal] load build context                                        0.1s
+ => => transferring context: 1.84MB                                      0.1s
+ => [builder 1/9] FROM docker.io/library/node:18-alpine@sha256:8d6421d  10.0s
+ => => resolve docker.io/library/node:18-alpine@sha256:8d6421d663b4c28f  0.0s
+ => => sha256:f18232174bc91741fdf3da96d85011092101a032a 3.64MB / 3.64MB  1.6s
+ => => sha256:dd71dde834b5c203d162902e6b8994cb2309ae0 40.01MB / 40.01MB  6.3s
+ => => sha256:1e5a4c89cee5c0826c540ab06d4b6b491c96eda01 1.26MB / 1.26MB  1.2s
+ => => sha256:8d6421d663b4c28fd3ebc498332f249011d118945 7.67kB / 7.67kB  0.0s
+ => => sha256:929b04d7c782f04f615cf785488fed452b6569f87 1.72kB / 1.72kB  0.0s
+ => => sha256:ee77c6cd7c1886ecc802ad6cedef3a8ec1ea27d1f 6.18kB / 6.18kB  0.0s
+ => => sha256:25ff2da83641908f65c3a74d80409d6b1b62ccfaab220 446B / 446B  1.6s
+ => => extracting sha256:f18232174bc91741fdf3da96d85011092101a032a93a38  0.3s
+ => => extracting sha256:dd71dde834b5c203d162902e6b8994cb2309ae049a0eab  3.4s
+ => => extracting sha256:1e5a4c89cee5c0826c540ab06d4b6b491c96eda01837f4  0.1s
+ => => extracting sha256:25ff2da83641908f65c3a74d80409d6b1b62ccfaab220b  0.0s
+ => [builder 2/9] WORKDIR /app                                           0.2s
+ => [builder 3/9] COPY package*.json ./                                  0.1s
+ => [production 4/9] RUN npm ci --only=production && npm cache clean -  28.5s
+ => [builder 4/9] COPY client/package*.json ./client/                    0.1s
+ => [builder 5/9] RUN npm ci --only=production                          25.6s
+ => ERROR [builder 6/9] RUN cd client && npm ci --only=production       28.7s
+------                                                                        
+ > [builder 6/9] RUN cd client && npm ci --only=production:                   
+2.590 npm warn config only Use `--omit=dev` to omit dev dependencies from the install.                                                                      
+28.29 npm error code EUSAGE                                                   
+28.29 npm error                                                               
+28.29 npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.                                    
+28.29 npm error                                                               
+28.29 npm error Missing: @typescript-eslint/eslint-plugin@6.21.0 from lock file
+28.29 npm error Missing: eslint@8.57.1 from lock file
+28.29 npm error Missing: @typescript-eslint/parser@6.21.0 from lock file
+28.29 npm error Invalid: lock file's cmdk@1.1.1 does not satisfy cmdk@0.2.1
+28.29 npm error Missing: eslint-plugin-react-hooks@4.6.2 from lock file
+28.29 npm error Missing: eslint-plugin-react-refresh@0.4.20 from lock file
+28.29 npm error Invalid: lock file's lucide-react@0.453.0 does not satisfy lucide-react@0.344.0
+28.29 npm error Invalid: lock file's next-themes@0.4.6 does not satisfy next-themes@0.2.1
+28.29 npm error Missing: next@15.4.3 from lock file
+28.29 npm error Invalid: lock file's vaul@1.1.2 does not satisfy vaul@0.9.9
+28.29 npm error Invalid: lock file's vite@6.3.5 does not satisfy vite@5.4.19
+28.29 npm error Missing: @eslint-community/regexpp@4.12.1 from lock file
+28.29 npm error Missing: @typescript-eslint/scope-manager@6.21.0 from lock file
+28.29 npm error Missing: @typescript-eslint/type-utils@6.21.0 from lock file
+28.29 npm error Missing: @typescript-eslint/utils@6.21.0 from lock file
+28.29 npm error Missing: @typescript-eslint/visitor-keys@6.21.0 from lock file
+28.29 npm error Missing: graphemer@1.4.0 from lock file
+28.29 npm error Missing: ignore@5.3.2 from lock file
+28.29 npm error Missing: natural-compare@1.4.0 from lock file
+28.29 npm error Missing: semver@7.7.2 from lock file
+28.29 npm error Missing: ts-api-utils@1.4.3 from lock file
+28.29 npm error Missing: @typescript-eslint/types@6.21.0 from lock file
+28.29 npm error Missing: @typescript-eslint/typescript-estree@6.21.0 from lock file
+28.29 npm error Missing: globby@11.1.0 from lock file
+28.29 npm error Missing: minimatch@9.0.3 from lock file
+28.29 npm error Missing: semver@7.7.2 from lock file
+28.29 npm error Missing: @eslint-community/eslint-utils@4.7.0 from lock file
+28.29 npm error Missing: @types/json-schema@7.0.15 from lock file
+28.29 npm error Missing: @types/semver@7.7.0 from lock file
+28.29 npm error Missing: semver@7.7.2 from lock file
+28.29 npm error Missing: eslint-visitor-keys@3.4.3 from lock file
+28.29 npm error Missing: @radix-ui/react-dialog@1.0.0 from lock file
+28.29 npm error Missing: @eslint/eslintrc@2.1.4 from lock file
+28.29 npm error Missing: @eslint/js@8.57.1 from lock file
+28.29 npm error Missing: @humanwhocodes/config-array@0.13.0 from lock file
+28.29 npm error Missing: @humanwhocodes/module-importer@1.0.1 from lock file
+28.29 npm error Missing: @ungap/structured-clone@1.3.0 from lock file
+28.29 npm error Missing: ajv@6.12.6 from lock file
+28.29 npm error Missing: chalk@4.1.2 from lock file
+28.29 npm error Missing: doctrine@3.0.0 from lock file
+28.29 npm error Missing: escape-string-regexp@4.0.0 from lock file
+28.29 npm error Missing: eslint-scope@7.2.2 from lock file
+28.29 npm error Missing: espree@9.6.1 from lock file
+28.29 npm error Missing: esquery@1.6.0 from lock file
+28.29 npm error Missing: esutils@2.0.3 from lock file
+28.29 npm error Missing: fast-deep-equal@3.1.3 from lock file
+28.29 npm error Missing: file-entry-cache@6.0.1 from lock file
+28.29 npm error Missing: find-up@5.0.0 from lock file
+28.29 npm error Missing: globals@13.24.0 from lock file
+28.29 npm error Missing: imurmurhash@0.1.4 from lock file
+28.29 npm error Missing: is-path-inside@3.0.3 from lock file
+28.29 npm error Missing: js-yaml@4.1.0 from lock file
+28.29 npm error Missing: json-stable-stringify-without-jsonify@1.0.1 from lock file
+28.29 npm error Missing: levn@0.4.1 from lock file
+28.29 npm error Missing: minimatch@3.1.2 from lock file
+28.29 npm error Missing: optionator@0.9.4 from lock file
+28.29 npm error Missing: strip-ansi@6.0.1 from lock file
+28.29 npm error Missing: text-table@0.2.0 from lock file
+28.29 npm error Missing: import-fresh@3.3.1 from lock file
+28.29 npm error Missing: minimatch@3.1.2 from lock file
+28.29 npm error Missing: strip-json-comments@3.1.1 from lock file
+28.29 npm error Missing: @humanwhocodes/object-schema@2.0.3 from lock file
+28.29 npm error Missing: minimatch@3.1.2 from lock file
+28.29 npm error Missing: fast-json-stable-stringify@2.1.0 from lock file
+28.29 npm error Missing: json-schema-traverse@0.4.1 from lock file
+28.29 npm error Missing: uri-js@4.4.1 from lock file
+28.29 npm error Missing: ansi-styles@4.3.0 from lock file
+28.29 npm error Missing: supports-color@7.2.0 from lock file
+28.29 npm error Missing: esrecurse@4.3.0 from lock file
+28.29 npm error Missing: estraverse@5.3.0 from lock file
+28.29 npm error Missing: acorn@8.15.0 from lock file
+28.29 npm error Missing: acorn-jsx@5.3.2 from lock file
+28.29 npm error Missing: flat-cache@3.2.0 from lock file
+28.29 npm error Missing: locate-path@6.0.0 from lock file
+28.29 npm error Missing: path-exists@4.0.0 from lock file
+28.29 npm error Missing: flatted@3.3.3 from lock file
+28.29 npm error Missing: keyv@4.5.4 from lock file
+28.29 npm error Missing: rimraf@3.0.2 from lock file
+28.29 npm error Missing: type-fest@0.20.2 from lock file
+28.29 npm error Missing: array-union@2.1.0 from lock file
+28.29 npm error Missing: dir-glob@3.0.1 from lock file
+28.29 npm error Missing: slash@3.0.0 from lock file
+28.29 npm error Missing: path-type@4.0.0 from lock file
+28.29 npm error Missing: parent-module@1.0.1 from lock file
+28.29 npm error Missing: resolve-from@4.0.0 from lock file
+28.29 npm error Missing: argparse@2.0.1 from lock file
+28.29 npm error Missing: json-buffer@3.0.1 from lock file
+28.29 npm error Missing: prelude-ls@1.2.1 from lock file
+28.29 npm error Missing: type-check@0.4.0 from lock file
+28.29 npm error Missing: p-locate@5.0.0 from lock file
+28.29 npm error Missing: @next/env@15.4.3 from lock file
+28.29 npm error Missing: @next/swc-darwin-arm64@15.4.3 from lock file
+28.29 npm error Missing: @next/swc-darwin-x64@15.4.3 from lock file
+28.29 npm error Missing: @next/swc-linux-arm64-gnu@15.4.3 from lock file
+28.29 npm error Missing: @next/swc-linux-arm64-musl@15.4.3 from lock file
+28.29 npm error Missing: @next/swc-linux-x64-gnu@15.4.3 from lock file
+28.29 npm error Missing: @next/swc-linux-x64-musl@15.4.3 from lock file
+28.29 npm error Missing: @next/swc-win32-arm64-msvc@15.4.3 from lock file
+28.29 npm error Missing: @next/swc-win32-x64-msvc@15.4.3 from lock file
+28.29 npm error Missing: @swc/helpers@0.5.15 from lock file
+28.29 npm error Missing: postcss@8.4.31 from lock file
+28.29 npm error Missing: sharp@0.34.3 from lock file
+28.29 npm error Missing: styled-jsx@5.1.6 from lock file
+28.29 npm error Missing: deep-is@0.1.4 from lock file
+28.29 npm error Missing: fast-levenshtein@2.0.6 from lock file
+28.29 npm error Missing: word-wrap@1.2.5 from lock file
+28.29 npm error Missing: p-limit@3.1.0 from lock file
+28.29 npm error Missing: yocto-queue@0.1.0 from lock file
+28.29 npm error Missing: callsites@3.1.0 from lock file
+28.29 npm error Missing: glob@7.2.3 from lock file
+28.29 npm error Missing: @img/sharp-darwin-arm64@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-darwin-x64@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-libvips-darwin-arm64@1.2.0 from lock file
+28.29 npm error Missing: @img/sharp-libvips-darwin-x64@1.2.0 from lock file
+28.29 npm error Missing: @img/sharp-libvips-linux-arm@1.2.0 from lock file
+28.29 npm error Missing: @img/sharp-libvips-linux-arm64@1.2.0 from lock file
+28.29 npm error Missing: @img/sharp-libvips-linux-ppc64@1.2.0 from lock file
+28.29 npm error Missing: @img/sharp-libvips-linux-s390x@1.2.0 from lock file
+28.29 npm error Missing: @img/sharp-libvips-linux-x64@1.2.0 from lock file
+28.29 npm error Missing: @img/sharp-libvips-linuxmusl-arm64@1.2.0 from lock file
+28.29 npm error Missing: @img/sharp-libvips-linuxmusl-x64@1.2.0 from lock file
+28.29 npm error Missing: @img/sharp-linux-arm@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-linux-arm64@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-linux-ppc64@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-linux-s390x@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-linux-x64@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-linuxmusl-arm64@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-linuxmusl-x64@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-wasm32@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-win32-arm64@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-win32-ia32@0.34.3 from lock file
+28.29 npm error Missing: @img/sharp-win32-x64@0.34.3 from lock file
+28.29 npm error Missing: color@4.2.3 from lock file
+28.29 npm error Invalid: lock file's detect-libc@2.0.3 does not satisfy detect-libc@2.0.4
+28.29 npm error Missing: semver@7.7.2 from lock file
+28.29 npm error Missing: @emnapi/runtime@1.4.5 from lock file
+28.29 npm error Missing: color-string@1.9.1 from lock file
+28.29 npm error Missing: simple-swizzle@0.2.2 from lock file
+28.29 npm error Missing: is-arrayish@0.3.2 from lock file
+28.29 npm error Missing: client-only@0.0.1 from lock file
+28.29 npm error Missing: has-flag@4.0.0 from lock file
+28.29 npm error Missing: punycode@2.3.1 from lock file
+28.29 npm error Missing: esbuild@0.21.5 from lock file
+28.29 npm error Missing: brace-expansion@1.1.12 from lock file
+28.29 npm error Missing: concat-map@0.0.1 from lock file
+28.29 npm error Missing: brace-expansion@1.1.12 from lock file
+28.29 npm error Missing: @radix-ui/primitive@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-compose-refs@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-context@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-dismissable-layer@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-focus-guards@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-focus-scope@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-id@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-portal@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-presence@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-primitive@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-slot@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-use-controllable-state@1.0.0 from lock file
+28.29 npm error Missing: react-remove-scroll@2.5.4 from lock file
+28.29 npm error Missing: @radix-ui/react-use-callback-ref@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-use-escape-keydown@1.0.0 from lock file
+28.29 npm error Missing: @radix-ui/react-use-layout-effect@1.0.0 from lock file
+28.29 npm error Missing: brace-expansion@1.1.12 from lock file
+28.29 npm error Missing: ansi-regex@5.0.1 from lock file
+28.29 npm error Missing: fs.realpath@1.0.0 from lock file
+28.29 npm error Missing: inflight@1.0.6 from lock file
+28.29 npm error Missing: minimatch@3.1.2 from lock file
+28.29 npm error Missing: once@1.4.0 from lock file
+28.29 npm error Missing: path-is-absolute@1.0.1 from lock file
+28.29 npm error Missing: wrappy@1.0.2 from lock file
+28.29 npm error Missing: brace-expansion@1.1.12 from lock file
+28.29 npm error Missing: @esbuild/aix-ppc64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/android-arm@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/android-arm64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/android-x64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/darwin-arm64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/darwin-x64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/freebsd-arm64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/freebsd-x64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/linux-arm@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/linux-arm64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/linux-ia32@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/linux-loong64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/linux-mips64el@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/linux-ppc64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/linux-riscv64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/linux-s390x@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/linux-x64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/netbsd-x64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/openbsd-x64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/sunos-x64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/win32-arm64@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/win32-ia32@0.21.5 from lock file
+28.29 npm error Missing: @esbuild/win32-x64@0.21.5 from lock file
+28.29 npm error
+28.29 npm error Clean install a project
+28.29 npm error
+28.29 npm error Usage:
+28.29 npm error npm ci
+28.29 npm error
+28.29 npm error Options:
+28.29 npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+28.29 npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+28.29 npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+28.29 npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+28.29 npm error [--no-bin-links] [--no-fund] [--dry-run]
+28.29 npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+28.29 npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+28.29 npm error
+28.29 npm error aliases: clean-install, ic, install-clean, isntall-clean
+28.29 npm error
+28.29 npm error Run "npm help ci" for more info
+28.30 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-07-23T13_23_40_446Z-debug-0.log
+------
+Dockerfile:13
+
+--------------------
+
+  11 |     # Install dependencies
+
+  12 |     RUN npm ci --only=production
+
+  13 | >>> RUN cd client && npm ci --only=production
+
+  14 |     
+
+  15 |     # Copy source code
+
+--------------------
+
+failed to solve: process "/bin/sh -c cd client && npm ci --only=production" did not complete successfully: exit code: 1
